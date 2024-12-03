@@ -236,3 +236,38 @@ position: relative;
   font-family: "Font Awesome 6 Free"; /* Specify the font family */
 
  }
+/* nav responsive */
+@media and(maxwwidth:600px){
+    
+}
+
+/* start loading icon */
+#loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  animation: fadeOut 3s forwards;
+  top: 0px;
+  z-index: 99999999999; /* 3 seconds for the fade out */
+}
+#loading-screen img {
+  max-width: 200px;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none; /* Ensures the element is removed after fade out */
+  }
+}
+/* end loading icon */
